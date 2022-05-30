@@ -8,16 +8,16 @@ public class Car extends WheelableTransport implements Serviceable, Wheelable, E
     }
     @Override
     public void updateTyre() {
-        System.out.println("Меняем покрышку у машины");
+        System.out.println("РњРµРЅСЏРµРј РїРѕРєСЂС‹С€РєСѓ  РјР°С€РёРЅС‹");
     }
     @Override
     public void checkEngine() {
-        System.out.println("Проверяем двигатель у машины");
+        System.out.println("РџСЂРѕРІРµСЂСЏРµРј РґРІРёРіР°С‚РµР»СЊ Сѓ РјР°С€РёРЅС‹");
     }
 
     @Override
     public void check() {
-        System.out.println("Обслуживаем " + getModelName());
+        System.out.println("РћР±СЃР»СѓР¶РёРІР°РµРј " + getModelName());
         for (int i = 0; i < getWheelsCount(); i++) {
             updateTyre();
         }
